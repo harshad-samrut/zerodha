@@ -1,0 +1,15 @@
+.pricing-item {
+  display: flex;
+  align-items: center;
+}
+
+.pricing-item img {
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.pricing-item p {
+  margin: 0 0 0 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
