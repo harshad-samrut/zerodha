@@ -1,0 +1,54 @@
+a {
+  text-decoration: none;
+}
+
+.copyright p,
+i {
+  color: #666;
+}
+.links p {
+  font-weight: 500;
+  font-size: large;
+  color: black;
+}
+
+.links a {
+  font-size: 14px;
+}
+
+.copyright i:hover {
+  cursor: pointer;
+  color: #387ed1;
+}
+.background {
+  background-color: #fbfbfb;
+}
+.copyright a {
+  color: #666;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: #387ed1;
+}
+hr {
+  color: #666;
+  margin: 0;
+}
+.copyright .terms {
+  font-size: 11px;
+  color: #7a7979e7;
+}
+.bottom-links {
+  font-size: 12px;
+}
+
+.bottom-links a {
+  color: #7a7979e7;
+  font-weight:600;
+  text-decoration: none;
+}
+
+.bottom-links a:hover {
+  color: #387ed1;
+}

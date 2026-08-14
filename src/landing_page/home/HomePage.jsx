@@ -11,7 +11,6 @@ import SignUp from "../SignUp"
 function HomePage() {
   return (
     <>
-      <Navbar />
       <Hero />
       <SignUp />
       <Trust />
@@ -20,7 +19,6 @@ function HomePage() {
       <Education />
       <OpenAcc />
       <SignUp />
-      <Footer />
     </>
   );
 }
