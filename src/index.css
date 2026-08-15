@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-body {
-  font-family: "Inter", sans-serif;
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 h1,
@@ -20,10 +24,12 @@ p {
   color: #387ed1;
   text-decoration: none;
   transition: color 0.2s ease;
+  font-weight: 500;
 }
 
 .link:hover {
   color: #424242;
+  opacity: 0.9;
 }
 .link i {
   transition: transform 0.2s ease;

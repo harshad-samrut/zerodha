@@ -10,7 +10,7 @@ function Navbar() {
     >
       <div className="container p-2">
         {/* Logo */}
-        <Link className="navbar-brand offset-1" href="#">
+        <Link className="navbar-brand offset-1" to="/">
           <img src={zerodhaImg} alt="Zerodha logo" width="130" />
         </Link>
 
@@ -46,7 +46,7 @@ function Navbar() {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/products">
+              <Link className="nav-link" to="/product">
                 Products
               </Link>
             </li>

@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom"
 function AboutUS() {
   return (
-    <div className=" mb-5">
+    <div className=" container mb-5">
       <div className="row mb-5">
         <div className="col-4 offset-2 lh-lg ">
           <p>
