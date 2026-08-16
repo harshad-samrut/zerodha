@@ -1,0 +1,9 @@
+.search-box::placeholder {
+  color: #6c757d9b;
+  opacity: 1;
+}
+
+.btn {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
