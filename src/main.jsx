@@ -7,6 +7,7 @@ import Footer from "./landing_page/Footer.jsx";
 import PageNotFound from "./landing_page/NotFount.jsx";
 import AboutPage from "./landing_page/about/AboutPage.jsx";
 import ProductPage from "./landing_page/products/ProudctPage.jsx";
+import Pricing from "./landing_page/pricing/PricingPage.jsx"
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -15,6 +16,7 @@ createRoot(document.getElementById("root")).render(
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/product" element={<ProductPage />} />
+      <Route path="/pricing" element={<Pricing />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
     <Footer />

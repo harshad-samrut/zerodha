@@ -1,0 +1,34 @@
+.equity-table th,
+.equity-table td {
+  width: 10%;
+  color: #666 !important;
+  padding:20px;
+}
+td .charges-tabs {
+  display: flex;
+  gap: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.charges-tabs button {
+  background: none;
+  border: none;
+  padding: 15px 5px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #387ed1;
+  cursor: pointer;
+}
+.charges-tabs button:hover {
+  color: #666;
+}
+
+.charges-tabs button.active {
+  color: #424242;
+  border-bottom: 2px solid #387ed1;
+}
+
+.dematAMC p{
+  color: #666;
+  font-size: small;
+}

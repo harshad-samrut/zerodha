@@ -1,0 +1,18 @@
+.charges p,
+.charges li {
+  color: #666;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.charges h5 {
+  color: #666 !important;
+  margin-top: 25px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  font-weight: 450;
+}
+
+.charges ul {
+  padding-left: 20px;
+}
