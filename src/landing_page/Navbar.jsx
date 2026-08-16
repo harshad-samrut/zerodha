@@ -1,7 +1,7 @@
+import { useState } from "react";
 import zerodhaImg from "../assets/logo.png";
-import "./Navbar.css"
-import {Link} from "react-router-dom";
-
+import "./Navbar.css";
+import { NavLink, Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav
@@ -30,37 +30,65 @@ function Navbar() {
         {/* Navigation links */}
         <div
           className="collapse navbar-collapse justify-content-end fw-semibold text-center"
-          id="navbarNav" 
+          id="navbarNav"
         >
-          <ul className="navbar-nav gap-4 me-5 fw-normal text-center" id="small-text">
-            <li className="nav-item " >
-              <Link className="nav-link " to="/signup">
+          <ul
+            className="navbar-nav gap-4 me-5 fw-normal text-center"
+            id="small-text"
+          >
+            <li className="nav-item ">
+              <NavLink
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "active" : ""}`
+                }
+                to="/signup"
+              >
                 Signup
-              </Link>
+              </NavLink>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link " to="/about">
+              <NavLink
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "active" : ""}`
+                }
+                to="/about"
+              >
                 About
-              </Link>
+              </NavLink>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/product">
+              <NavLink
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "active" : ""}`
+                }
+                to="/product"
+              >
                 Products
-              </Link>
+              </NavLink>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="pricing">
+              <NavLink
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "active" : ""}`
+                }
+                to="/pricing"
+              >
                 Pricing
-              </Link>
+              </NavLink>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/support">
+              <NavLink
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "active" : ""}`
+                }
+                to="/support"
+              >
                 Support
-              </Link>
+              </NavLink>
             </li>
 
             <li className="nav-item">

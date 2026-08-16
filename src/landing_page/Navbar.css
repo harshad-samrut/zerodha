@@ -9,3 +9,7 @@
 #small-text{
     font-size: 15.4px;
 }
+.nav-link.active {
+  color: #387ed1 !important;
+  font-weight:500;
+}
