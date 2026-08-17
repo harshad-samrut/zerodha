@@ -1,3 +1,4 @@
+import React from "react";
 import nithinKamath from "../../assets/nithin-kamath.jpg";
 import { Link } from "react-router-dom";
 
@@ -48,68 +49,67 @@ const people = [
     alt: "Austin Prakesh",
   },
 ];
+
 function People() {
   return (
-    <div className="container ">
+    <section className="container people-section pb-5">
+      {/* Title */}
       <div className="row">
-        <div className="col text-center mt-5">
-          <h3>People</h3>
+        <div className="col text-center mt-4 mt-md-5">
+          <h2 className="people-main-heading">People</h2>
         </div>
       </div>
 
-      {/* Nithin */}
-      <div className="row mt-5 d-flex gap-4">
-        <div className="col-3 offset-2  d-flex flex-column text-center">
+      {/* Founder Profile */}
+      <div className="row justify-content-center align-items-center mt-4 mt-md-5 gy-4">
+        <div className="col-12 col-md-5 col-lg-4 text-center">
           <img
             src={nithinKamath}
-            alt="nithin-kamath"
-            className="rounded-circle"
+            alt="Nithin Kamath"
+            className="rounded-circle img-fluid founder-img mb-3"
           />
-          <h6 className="mt-4">Nithin Kamath</h6>
-          <p className="font-size-small">Founder, CEO</p>
+          <h5 className="person-name mb-1">Nithin Kamath</h5>
+          <p className="person-role">Founder, CEO</p>
         </div>
-        <div className="col-5 lh-lg ms-3 mt-4">
+
+        <div className="col-12 col-md-7 col-lg-6 founder-bio">
           <p>
             Nithin bootstrapped and founded Zerodha in 2010 to overcome the
-            hurdles he faced during his decade long stint as a trader. Today,
+            hurdles he faced during his decade-long stint as a trader. Today,
             Zerodha has changed the landscape of the Indian broking industry.
           </p>
-
           <p>
             He is a member of the SEBI Secondary Market Advisory Committee
             (SMAC) and the Market Data Advisory Committee (MDAC).
           </p>
-
           <p>Playing basketball is his zen.</p>
-
           <p>
-            Connect on <Link to={"/"}>Homepage</Link> /{" "}
-            <Link to={"/"}>TradingQnA</Link> / <Link to={"/"}>Twitter</Link>
+            Connect on <Link to="#" className="link">Homepage</Link> /{" "}
+            <Link to="#" className="link">TradingQnA</Link> /{" "}
+            <Link to="#" className="link">Twitter</Link>
           </p>
         </div>
       </div>
-      {/* Other people */}
-      <div className="row my-5">
+
+      {/* Team Grid */}
+      <div className="row mt-5 gy-4 justify-content-center">
         {people.map((person) => (
           <div
-            className="col-12 col-md-4 text-center my-5 d-flex flex-column align-items-center gap-4"
+            className="col-12 col-sm-6 col-lg-4 text-center d-flex flex-column align-items-center mb-4"
             key={person.name}
           >
             <img
               src={person.image}
-              alt={person.name}
-              className="rounded-circle img-fluid"
-              width={250}
+              alt={person.alt}
+              className="rounded-circle img-fluid team-member-img mb-3"
             />
-
-            <div className="role">
-              <h6>{person.name}</h6>
-              <p className="font-size-small">{person.role}</p>
-            </div>
+            <h5 className="person-name mb-1">{person.name}</h5>
+            <p className="person-role">{person.role}</p>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
+
 export default People;

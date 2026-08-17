@@ -1,9 +1,13 @@
-import {Link} from "react-router-dom"
+import React from "react";
+import { Link } from "react-router-dom";
+import "./People.css";
+
 function AboutUS() {
   return (
-    <div className=" container mb-5">
-      <div className="row mb-5">
-        <div className="col-4 offset-2 lh-lg ">
+    <section className="container about-us-section mb-4 mb-md-5">
+      <div className="row justify-content-center gy-4 gx-lg-5">
+        {/* Left Column */}
+        <div className="col-12 col-md-6 col-lg-5">
           <p>
             We kick-started operations on the 15th of August, 2010 with the goal
             of breaking all barriers that traders and investors face in India in
@@ -18,27 +22,31 @@ function AboutUS() {
           <p>
             Over 1.6+ crore clients place billions of orders every year through
             our powerful ecosystem of investment platforms, contributing over
-            15% of all Indian retail trading volumes
+            15% of all Indian retail trading volumes.
           </p>
         </div>
-        <div className="col-4 lh-lg">
+
+        {/* Right Column */}
+        <div className="col-12 col-md-6 col-lg-5">
           <p>
             In addition, we run a number of popular open online educational and
             community initiatives to empower retail traders and investors.
           </p>
           <p>
-            <Link to="/">Rainmatter</Link>, our fintech fund and incubator, has invested in several
+            <Link to="#" className="link">Rainmatter</Link>, our fintech fund and incubator, has invested in several
             fintech startups with the goal of growing the Indian capital
             markets.
           </p>
           <p>
             And yet, we are always up to something new every day. Catch up on
-            the latest updates on our <Link to="/">blog</Link> or see what the media is <Link to="/">saying about</Link>
-            us or learn more about our business and product <Link to="/">philosophies</Link>.
+            the latest updates on our <Link to="#" className="link">blog</Link> or see what the media is{" "}
+            <Link to="#" className="link">saying about us</Link> or learn more about our business and product{" "}
+            <Link to="#" className="link">philosophies</Link>.
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
+
 export default AboutUS;

@@ -1,1 +1,39 @@
+/* Container & Base Styles */
+.hero-section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
+/* Image Optimization */
+.hero-img-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: inline-block;
+}
+
+/* Responsive Typography */
+.hero-title {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  line-height: 1.25;
+  color: #424242;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 576px) {
+  .hero-section {
+    margin-top: 1.5rem !important;
+    margin-bottom: 2rem !important;
+  }
+}

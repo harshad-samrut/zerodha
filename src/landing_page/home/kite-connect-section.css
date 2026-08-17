@@ -1,10 +1,32 @@
 .kite-connect-section {
   background-color: #f6faff;
-  padding: 20px 0;
+  padding: 24px 0;
 }
 
-.kite-connect-section p {
+.kc-logo {
+  max-width: 140px;
+  height: auto;
+  display: inline-block;
+}
+
+.kc-text {
   color: #666;
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.8;
+}
+
+/* Mobile & Tablet Adjustments */
+@media (max-width: 767.98px) {
+  .kite-connect-section {
+    padding: 40px 15px;
+  }
+
+  .kc-logo {
+    max-width: 210px;
+  }
+
+  .kc-text {
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
 }

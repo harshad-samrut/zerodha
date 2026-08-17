@@ -4,14 +4,14 @@ import "./Trust.css";
 
 function Trust() {
   return (
-    <div className="container trust-section">
-      <div className="row align-items-center">
+    <section className="container trust-section">
+      <div className="row align-items-center gy-5">
         {/* Left Content */}
-        <div className="col-4 offset-1 trust-content mt-5">
-          <h3 className="mb-5">Trust with confidence</h3>
+        <div className="col-12 col-lg-5 offset-lg-1 trust-content">
+          <h2 className="trust-main-heading mb-4 mb-lg-5">Trust with confidence</h2>
 
           <div className="trust-item">
-            <h3 className="mt-5">Customer-first always</h3>
+            <h3>Customer-first always</h3>
             <p>
               That's why 1.6+ crore customers trust Zerodha with ~ ₹6 lakh
               crores of equity investments, making us India’s largest broker;
@@ -48,25 +48,26 @@ function Trust() {
         </div>
 
         {/* Right Image */}
-        <div className="col-6 text-center">
+        <div className="col-12 col-lg-6 text-center trust-image-col">
           <img
             src={ecosystem}
-            alt="Zerodha ecosystem"
+            alt="Zerodha ecosystem map"
             className="img-fluid trust-image"
           />
-          <div className="d-flex justify-content-center gap-4 mt-4">
+          <div className="d-flex flex-wrap justify-content-center gap-3 gap-md-4 mt-4">
             <a href="#" className="link fw-medium">
               Explore our products{" "}
-              <i className="fa-solid fa-arrow-right-long"></i>
+              <i className="fa-solid fa-arrow-right-long ms-1"></i>
             </a>
 
             <a href="#" className="link fw-medium">
-              Try Kite demo <i className="fa-solid fa-arrow-right-long"></i>
+              Try Kite demo{" "}
+              <i className="fa-solid fa-arrow-right-long ms-1"></i>
             </a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

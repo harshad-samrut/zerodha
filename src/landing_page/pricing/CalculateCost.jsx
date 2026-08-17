@@ -1,10 +1,16 @@
+import React from "react";
 import { Link } from "react-router-dom";
+
 function CalculateCost() {
   return (
-    <p className="text-center fs-5 my-5 pb-5">
-      <Link className="link" to="/">Calculate your costs upfront</Link> using our brokerage
-      calculator
-    </p>
+    <div className="container text-center my-4 my-md-5">
+      <p className="fs-5 text-muted mb-0">
+        <Link className="link fw-medium" to="/">
+          Calculate your costs upfront
+        </Link>{" "}
+        using our brokerage calculator
+      </p>
+    </div>
   );
 }
 

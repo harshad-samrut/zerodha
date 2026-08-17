@@ -1,19 +1,19 @@
 import React from "react";
+import "./OpenAcc.css";
 
 function OpenAcc() {
   return (
-    <div className="container text-center my-5">
-      <div className="row">
-        <div className="col-12 d-flex flex-column gap-2">
-          <h3 className="mb-2 mt-5">Open a Zerodha account</h3>
-
-          <p className="fs-6 mb-1">
+    <section className="open-acc-section container text-center my-4 my-md-5">
+      <div className="row justify-content-center">
+        <div className="col-12 col-md-10 col-lg-8 d-flex flex-column align-items-center">
+          <h2 className="open-acc-heading mb-3">Open a Zerodha account</h2>
+          <p className="open-acc-subtext text-muted mb-4">
             Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and
             F&O trades.
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

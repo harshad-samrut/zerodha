@@ -11,6 +11,7 @@ import AboutPage from "./landing_page/about/AboutPage.jsx";
 import ProductPage from "./landing_page/products/ProudctPage.jsx";
 import Pricing from "./landing_page/pricing/PricingPage.jsx";
 import Support from "./landing_page/support/SupportPage.jsx";
+import Signup from "./landing_page/signup/SignupPage.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -18,6 +19,7 @@ createRoot(document.getElementById("root")).render(
     <Navbar />
     <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path="/signup" element={<Signup />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/product" element={<ProductPage />} />
       <Route path="/pricing" element={<Pricing />} />

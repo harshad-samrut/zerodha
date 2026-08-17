@@ -1,63 +1,71 @@
 .trust-section {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
-.trust-content h2 {
+.trust-main-heading {
   font-size: 2rem;
   font-weight: 500;
   color: #424242;
-  margin-bottom: 45px;
+  line-height: 1.3;
 }
 
 .trust-item {
   margin-bottom: 35px;
 }
 
-.trust-item h3 {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #424242;
-  margin-bottom: 12px;
-}
-
-.trust-item p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #666;
+.trust-item:last-child {
   margin-bottom: 0;
-}
-
-.trust-section {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.trust-title {
-  font-size: 2rem;
-  font-weight: 500;
-  margin-bottom: 45px;
-  color: #424242;
-}
-
-.trust-item {
-  margin-bottom: 40px;
 }
 
 .trust-item h3 {
   font-size: 1.25rem;
   font-weight: 500;
-  margin-bottom: 15px;
   color: #424242;
+  margin-bottom: 10px;
 }
 
 .trust-item p {
-  font-size: 1rem;
-  line-height: 1.8;
+  font-size: 0.95rem;
+  line-height: 1.7;
   color: #666;
-  margin: 0;
+  margin-bottom: 0;
 }
 
-.trust-section img {
-  max-width: 100%;
+.trust-image {
+  max-width: 90%;
+  height: auto;
+}
+
+/* Mobile & Tablet Responsiveness */
+@media (max-width: 991.98px) {
+  .trust-section {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .trust-main-heading {
+    font-size: 1.65rem;
+  }
+
+  .trust-item {
+    margin-bottom: 28px;
+  }
+
+  .trust-item h3 {
+    font-size: 1.15rem;
+  }
+
+  .trust-item p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .trust-image {
+    max-width: 100%;
+  }
+
+  .trust-image-col {
+    margin-top: 10px;
+  }
 }

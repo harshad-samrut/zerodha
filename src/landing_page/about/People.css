@@ -1,7 +1,83 @@
-.font-size-small{
-    font-size: small;
-    color: #666!important;
+/* About Us Header Styles */
+.about-hero-text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #424242;
 }
-.row p{
-    color:black;
+
+.about-divider {
+  border-top: 1px solid #eee;
+  opacity: 1;
+}
+
+/* About Paragraphs */
+.about-us-section p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.85;
+  margin-bottom: 1.5rem;
+}
+
+/* People Section */
+.people-main-heading {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #424242;
+}
+
+.founder-img {
+  width: 250px;
+  max-width: 80%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.founder-bio p {
+  color: #666;
+  font-size: 0.98rem;
+  line-height: 1.85;
+  margin-bottom: 1.25rem;
+}
+
+.team-member-img {
+  width: 200px;
+  max-width: 75%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.person-name {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #424242;
+}
+
+.person-role {
+  font-size: 0.88rem;
+  color: #888;
+  margin-bottom: 0;
+}
+
+/* Mobile & Tablet Responsiveness */
+@media (max-width: 768px) {
+  .about-hero-text {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  .about-us-section p,
+  .founder-bio p {
+    font-size: 0.92rem;
+    line-height: 1.65;
+  }
+
+  .founder-img {
+    width: 190px;
+  }
+
+  .team-member-img {
+    width: 170px;
+  }
 }

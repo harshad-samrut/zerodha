@@ -3,8 +3,8 @@ import "./QuickLinks.css";
 
 function QuickLinks() {
   return (
-    <div className="quicklinks-container">
-      {/* Notice Box */}
+    <aside className="quicklinks-container">
+      {/* Notice Alert Box */}
       <div className="notice-box">
         <ul>
           <li>
@@ -20,14 +20,14 @@ function QuickLinks() {
       <div className="quick-links-card">
         <div className="quick-links-header">Quick links</div>
         <div className="quick-links-list">
-          <a href="#" className="link p-4">1. Track account opening</a>
-          <a href="#" className="link p-4">2. Track segment activation</a>
-          <a href="#" className="link p-4">3. Intraday margins</a>
-          <a href="#" className="link p-4">4. Kite user manual</a>
-          <a href="#" className="link p-4">5. Learn how to create a ticket</a>
+          <a href="#">1. Track account opening</a>
+          <a href="#">2. Track segment activation</a>
+          <a href="#">3. Intraday margins</a>
+          <a href="#">4. Kite user manual</a>
+          <a href="#">5. Learn how to create a ticket</a>
         </div>
       </div>
-    </div>
+    </aside>
   );
 }
 

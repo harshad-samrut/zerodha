@@ -1,9 +1,54 @@
-.search-box::placeholder {
-  color: #6c757d9b;
-  opacity: 1;
+.support-portal-section {
+  background-color: #f7fafc;
 }
 
-.btn {
-  padding-left: 30px !important;
-  padding-right: 30px !important;
+.support-portal-title {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 500;
+  color: #424242;
+}
+
+.support-search-form .search-box {
+  padding: 14px 18px;
+  font-size: 1rem;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #ced4da;
+}
+
+.support-search-form .search-box:focus {
+  border-color: #387ed1;
+  box-shadow: 0 0 0 0.2rem rgba(56, 126, 209, 0.15);
+}
+
+.support-search-form .search-box::placeholder {
+  color: #888;
+  font-size: 0.95rem;
+}
+
+.search-submit-btn {
+  padding: 0 28px !important;
+  font-weight: 500;
+  border-radius: 0 4px 4px 0 !important;
+}
+
+.support-ticket-btn {
+  border-radius: 3px;
+  font-weight: 500;
+  width: fit-content;
+}
+
+@media (max-width: 575.98px) {
+  .support-search-form .search-box {
+    padding: 10px 14px;
+    font-size: 0.88rem;
+  }
+
+  .support-search-form .search-box::placeholder {
+    font-size: 0.82rem;
+  }
+
+  .search-submit-btn {
+    padding: 0 16px !important;
+    font-size: 0.9rem;
+  }
 }

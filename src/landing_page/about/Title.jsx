@@ -1,21 +1,25 @@
+import React from "react";
+import "./People.css";
+
 function Title() {
   return (
-    <div className="container my-5 py-5 ">
-      <div className="row ">
-        <div className="col-6 offset-3 mb-5">
-          <h4 className="py-4 lh-lg mb-4">
-            We pioneered the discount broking model in India. Now, we are
-            breaking ground with our technology.
-          </h4>
-        </div>
-        <div className="row">
-            <div className="col-10 offset-1">
-                <hr />
-            </div>
+    <section className="about-title-section container mt-4 mt-md-5 pt-3 pt-md-4">
+      <div className="row justify-content-center text-center">
+        <div className="col-12 col-md-10 col-lg-8">
+          <h2 className="about-hero-text">
+            We pioneered the discount broking model in India.
+            <br className="d-none d-md-inline" />
+            {" "}Now, we are breaking ground with our technology.
+          </h2>
         </div>
       </div>
-      
-    </div>
+      <div className="row mt-4 mt-md-5">
+        <div className="col-12 col-lg-10 offset-lg-1">
+          <hr className="about-divider" />
+        </div>
+      </div>
+    </section>
   );
 }
+
 export default Title;

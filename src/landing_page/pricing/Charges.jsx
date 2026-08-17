@@ -1,13 +1,17 @@
+import React from "react";
+
 function Charges() {
   return (
-    <div className="container g-4">
-      <div className="row">
-        <div className="col d-flex flex-column align-items-center gap-3 my-5">
-          <h3 className="mt-5">Charges</h3>
-          <p className="fs-5 text-muted">List of all charges and taxes</p>
+    <section className="container text-center my-4 my-md-5 pt-3 pt-md-4">
+      <div className="row justify-content-center">
+        <div className="col-12 col-md-8">
+          <h1 className="fw-medium text-dark mb-2" style={{ fontSize: "clamp(1.8rem, 4vw, 2.5rem)" }}>
+            Charges
+          </h1>
+          <p className="fs-5 text-muted mb-0">List of all charges and taxes</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

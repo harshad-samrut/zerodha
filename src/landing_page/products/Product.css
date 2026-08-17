@@ -1,3 +1,130 @@
-.product p{
- font-size: 17px;
+/* Product Hero */
+.product-main-heading {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #424242;
+}
+
+.product-subheading {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.product-hero-link {
+  font-size: 1.05rem;
+}
+
+.product-divider {
+  border-top: 1px solid #eee;
+  opacity: 1;
+}
+
+/* Product Showcase (LeftImg & RightImg) */
+.product-showcase-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.product-showcase-img {
+  max-width: 90%;
+  height: auto;
+}
+
+.product-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #424242;
+}
+
+.product-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #666;
+}
+
+.app-badge {
+  height: 38px;
+  width: auto;
+  transition: opacity 0.2s ease;
+}
+
+.app-badge:hover {
+  opacity: 0.85;
+}
+
+/* Tech Text */
+.tech-heading-text {
+  font-size: 1.25rem;
+  color: #424242;
+  line-height: 1.6;
+}
+
+/* Zerodha Universe Grid */
+.universe-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #424242;
+}
+
+.universe-subtext {
+  font-size: 1.05rem;
+}
+
+.universe-partner-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 15px;
+  height: 100%;
+}
+
+.universe-logo-box {
+  height: 60px;
+  width: 100%;
+}
+
+.universe-logo {
+  max-height: 45px;
+  max-width: 160px;
+  object-fit: contain;
+}
+
+.universe-card-desc {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: #888 !important;
+  max-width: 270px;
+}
+
+/* Mobile & Tablet Adjustments */
+@media (max-width: 991.98px) {
+  .product-main-heading {
+    font-size: 1.85rem;
+  }
+
+  .product-subheading {
+    font-size: 1.05rem;
+  }
+
+  .product-title {
+    font-size: 1.55rem;
+  }
+
+  .product-description {
+    font-size: 0.92rem;
+    line-height: 1.65;
+  }
+
+  .product-showcase-img {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .tech-heading-text {
+    font-size: 1.05rem;
+  }
+
+  .universe-title {
+    font-size: 1.65rem;
+  }
 }

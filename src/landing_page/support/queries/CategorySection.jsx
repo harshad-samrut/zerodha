@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./CategorySection.css";
 
 const categories = [
@@ -13,7 +13,6 @@ const categories = [
       "Glossary",
     ],
   },
-
   {
     title: "Your Zerodha Account",
     icon: "fa-regular fa-circle-user",
@@ -25,7 +24,6 @@ const categories = [
       "Transfer and conversion of securities",
     ],
   },
-
   {
     title: "Kite",
     icon: "fa-regular fa-circle",
@@ -38,7 +36,6 @@ const categories = [
       "General",
     ],
   },
-
   {
     title: "Funds",
     icon: "fa-regular fa-circle",
@@ -49,7 +46,6 @@ const categories = [
       "eMandates",
     ],
   },
-
   {
     title: "Console",
     icon: "fa-regular fa-circle",
@@ -62,7 +58,6 @@ const categories = [
       "Segments",
     ],
   },
-
   {
     title: "Coin",
     icon: "fa-solid fa-cent-sign",
@@ -81,66 +76,56 @@ function CategorySection() {
   const [activeCategory, setActiveCategory] = useState(null);
 
   const handleClick = (index) => {
-    if (activeCategory === index) {
-      setActiveCategory(null);
-    } else {
-      setActiveCategory(index);
-    }
+    setActiveCategory(activeCategory === index ? null : index);
   };
 
   return (
-    <div className="container my-5">
-      <div className="row">
-        <div className="col-12">
+    <div className="category-list">
+      {categories.map((category, index) => {
+        const isOpen = activeCategory === index;
+        return (
+          <div className="category-box mb-3" key={category.title}>
+            {/* Accordion Header */}
+            <button
+              type="button"
+              className="category-header"
+              onClick={() => handleClick(index)}
+              aria-expanded={isOpen}
+            >
+              <div className="category-icon">
+                <i className={category.icon}></i>
+              </div>
 
-          {categories.map((category, index) => (
-            <div className="category-box mb-4" key={category.title}>
+              <div className="category-title">
+                {category.title}
+              </div>
 
-              {/* Header */}
-              <button
-                className="category-header"
-                onClick={() => handleClick(index)}
-              >
-                {/* Icon */}
-                <div className="category-icon">
-                  <i className={category.icon}></i>
-                </div>
+              <div className="category-arrow">
+                <i
+                  className={`fa-solid ${
+                    isOpen ? "fa-chevron-up" : "fa-chevron-down"
+                  }`}
+                ></i>
+              </div>
+            </button>
 
-                {/* Title */}
-                <div className="category-title">
-                  {category.title}
-                </div>
-
-                {/* Arrow */}
-                <div className="category-arrow">
-                  <i
-                    className={
-                      activeCategory === index
-                        ? "fa-solid fa-chevron-up"
-                        : "fa-solid fa-chevron-down"
-                    }
-                  ></i>
-                </div>
-              </button>
-
-              {/* Content */}
-              {activeCategory === index && (
-                <div className="category-content">
-                  <ul>
-                    {category.items.map((item) => (
-                      <li key={item}>
-                        <a href="#">{item}</a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-
-            </div>
-          ))}
-
-        </div>
-      </div>
+            {/* Accordion Content */}
+            {isOpen && (
+              <div className="category-content">
+                <ul>
+                  {category.items.map((item) => (
+                    <li key={item}>
+                      <a href="#" className="category-item-link">
+                        {item}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 }

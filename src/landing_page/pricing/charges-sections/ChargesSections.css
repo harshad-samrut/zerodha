@@ -1,34 +1,56 @@
-.equity-table th,
-.equity-table td {
-  width: 10%;
-  color: #666 !important;
-  padding:20px;
-}
-td .charges-tabs {
-  display: flex;
-  gap: 30px;
-  border-bottom: 1px solid #ddd;
+.charges-tab-section .charges-tabs {
+  border-color: #eee !important;
 }
 
-.charges-tabs button {
+.tab-btn {
   background: none;
   border: none;
-  padding: 15px 5px;
-  font-size: 25px;
+  font-size: 1.15rem;
   font-weight: 500;
-  color: #387ed1;
+  color: #666;
+  padding: 8px 12px;
   cursor: pointer;
-}
-.charges-tabs button:hover {
-  color: #666;
+  position: relative;
+  transition: color 0.2s ease;
 }
 
-.charges-tabs button.active {
-  color: #424242;
+.tab-btn:hover {
+  color: #387ed1;
+}
+
+.tab-btn.active {
+  color: #387ed1;
+  font-weight: 600;
   border-bottom: 2px solid #387ed1;
+  margin-bottom: -10px;
 }
 
-.dematAMC p{
+.equity-table {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.equity-table th {
+  background-color: #fbfbfb;
+  font-weight: 500;
   color: #666;
-  font-size: small;
+  padding: 12px 14px;
+}
+
+.equity-table td {
+  padding: 12px 14px;
+  color: #555;
+  vertical-align: middle;
+}
+
+.equity-table ul {
+  padding-left: 18px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .tab-btn {
+    font-size: 1rem;
+    padding: 6px 8px;
+  }
 }

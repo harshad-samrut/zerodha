@@ -1,0 +1,53 @@
+.open-acc-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.open-acc-heading {
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: #424242;
+  line-height: 1.3;
+}
+
+.open-acc-subtext {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 580px;
+}
+
+.btn-signup {
+  background-color: #387ed1;
+  border-color: #387ed1;
+  border-radius: 3px;
+  font-weight: 500;
+  min-width: 190px;
+}
+
+.btn-signup:hover {
+  background-color: #424242;
+  border-color: #424242;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .open-acc-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .open-acc-heading {
+    font-size: 1.65rem;
+  }
+
+  .open-acc-subtext {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .btn-signup {
+    width: 80%;
+    max-width: 260px;
+    font-size: 1.05rem !important;
+  }
+}

@@ -1,37 +1,46 @@
+import React from "react";
 import appstore from "../../assets/appstore-badge-light.png";
 import playstore from "../../assets/google-play-badge-light.png";
 import "./Product.css";
 
 function LeftImg({ ImgUrl, Title, Description, TryDemo, LearnMore }) {
   return (
-    <div className="container d-flex gap-5 align-item-end ">
-      <div className="row my-5">
-        <div className="col-5 offset-1">
-          <img src={ImgUrl} alt="img" />
+    <section className="container product-showcase-section my-5 py-2 py-md-4">
+      <div className="row align-items-center justify-content-center gy-4 gy-lg-0">
+        {/* Left: Image */}
+        <div className="col-12 col-lg-6 text-center">
+          <img 
+            src={ImgUrl} 
+            alt={Title} 
+            className="img-fluid product-showcase-img" 
+          />
         </div>
-        <div className="col-1"></div>
-        <div className="col-4 d-flex flex-column gap-3 product justify-content-center">
-          <h3>{Title}</h3>
-          <p className="lh-lg">{Description}</p>
-          <div className="d-flex gap-5">
-            <a href={TryDemo} className="link">
-              Try Demo &nbsp; <i className="fa-solid fa-arrow-right-long"></i>
+
+        {/* Right: Content */}
+        <div className="col-12 col-lg-5 offset-lg-1 product-details text-center text-lg-start">
+          <h2 className="product-title mb-3">{Title}</h2>
+          <p className="product-description mb-4">{Description}</p>
+          
+          <div className="d-flex justify-content-center justify-content-lg-start gap-4 flex-wrap mb-4">
+            <a href={TryDemo} className="link fw-medium">
+              Try Demo <i className="fa-solid fa-arrow-right-long ms-1"></i>
             </a>
-            <a href={LearnMore} className="link">
-              Learn More &nbsp;<i className="fa-solid fa-arrow-right-long"></i>
+            <a href={LearnMore} className="link fw-medium">
+              Learn More <i className="fa-solid fa-arrow-right-long ms-1"></i>
             </a>
           </div>
-          <div className="store d-flex gap-4 mt-3 mb-5">
+
+          <div className="d-flex justify-content-center justify-content-lg-start gap-3 store-badges">
             <a href="/">
-              <img src={playstore} alt="Play store" />
+              <img src={playstore} alt="Google Play" className="app-badge" />
             </a>
             <a href="/">
-              <img src={appstore} alt="Play store" />
+              <img src={appstore} alt="App Store" className="app-badge" />
             </a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
